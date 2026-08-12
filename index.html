@@ -11,6 +11,7 @@
 <body>
   <div class="container">
     <h1>🚀 CareerPilot AI</h1>
+    <p>Your AI Career Coach + ATS Optimizer</p>
     
     <div class="menu">
       <button onclick="showCV()">ATS CV Builder</button>
@@ -24,14 +25,19 @@
       <input id="name" placeholder="Full Name">
       <input id="email" placeholder="Email Address">
       <input id="phone" placeholder="Phone Number">
-      <input id="address" placeholder="Address/City">
+      <input id="address" placeholder="Address / City">
       <textarea id="summary" placeholder="Professional Summary"></textarea>
-      <textarea id="experience" placeholder="Work Experience"></textarea>
+      <textarea id="experience" placeholder="Work Experience - use bullet points"></textarea>
       <textarea id="education" placeholder="Education Background"></textarea>
       <textarea id="skills" placeholder="Skills - comma separated"></textarea>
       <textarea id="refs" placeholder="References"></textarea>
-      <button onclick="checkATS()">Check ATS Score</button>
-      <button onclick="downloadPDF()">Download CV as PDF</button>
+      
+      <h3>🔍 ATS Keyword Scanner</h3>
+      <textarea id="jobdesc" placeholder="PASTE FULL JOB DESCRIPTION HERE"></textarea>
+      
+      <button onclick="checkATS()">1. Check ATS Score + Keywords</button>
+      <button onclick="aiRewrite()">2. AI Rewrite with Keywords</button>
+      <button onclick="downloadPDF()">3. Download CV as PDF</button>
       <div id="ats-result"></div>
     </div>
 
