@@ -1,9 +1,10 @@
+
 function show(text) {
   document.getElementById("output").innerText = text;
 }
 
 function atsBuilder() {
-  show("📄 ATS CV Builder\n\n1. Use keywords from the job description\n2. Keep formatting simple - no tables\n3. Add results: 'Increased sales by 30%'\n4. Save as PDF");
+  show("📄 ATS CV Builder\n1. Use keywords from the job description\n2. Keep formatting simple - no tables\n3. Add results: 'Increased sales by 30%'\n4. Save as PDF");
 }
 
 function coverLetter() {
