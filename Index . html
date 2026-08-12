@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CareerPilot AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 CareerPilot AI</h1>
+    <p>Your AI Career Coach</p>
+    
+    <button onclick="atsBuilder()">ATS CV Builder</button>
+    <button onclick="coverLetter()">Cover Letter Generator</button>
+    <button onclick="jobEmail()">Job Email Generator</button>
+    <button onclick="interviewCoach()">Interview Coach</button>
+    
+    <div id="output"></div>
+    <p class="footer">© 2026 CareerPilot AI</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
