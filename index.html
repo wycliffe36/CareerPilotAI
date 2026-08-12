@@ -6,17 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CareerPilot AI</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
   <div class="container">
     <h1>🚀 CareerPilot AI</h1>
-    <p>Your AI Career Coach</p>
     
-    <button onclick="atsBuilder()">ATS CV Builder</button>
-    <button onclick="coverLetter()">Cover Letter Generator</button>
-    <button onclick="jobEmail()">Job Email Generator</button>
-    <button onclick="interviewCoach()">Interview Coach</button>
-    
+    <div class="menu">
+      <button onclick="showCV()">ATS CV Builder</button>
+      <button onclick="showCover()">Cover Letter</button>
+      <button onclick="showEmail()">Job Email</button>
+      <button onclick="showInterview()">Interview Coach</button>
+    </div>
+
+    <div id="cv-form" class="form-box" style="display:none">
+      <h2>Build Your ATS CV</h2>
+      <input id="name" placeholder="Full Name">
+      <input id="email" placeholder="Email Address">
+      <input id="phone" placeholder="Phone Number">
+      <input id="address" placeholder="Address/City">
+      <textarea id="summary" placeholder="Professional Summary"></textarea>
+      <textarea id="experience" placeholder="Work Experience"></textarea>
+      <textarea id="education" placeholder="Education Background"></textarea>
+      <textarea id="skills" placeholder="Skills - comma separated"></textarea>
+      <textarea id="refs" placeholder="References"></textarea>
+      <button onclick="checkATS()">Check ATS Score</button>
+      <button onclick="downloadPDF()">Download CV as PDF</button>
+      <div id="ats-result"></div>
+    </div>
+
+    <div id="cover-form" class="form-box" style="display:none">
+      <h2>Cover Letter Generator</h2>
+      <input id="c-name" placeholder="Your Name">
+      <input id="c-company" placeholder="Company Name">
+      <input id="c-role" placeholder="Job Role">
+      <textarea id="c-text" placeholder="Cover Letter will appear here"></textarea>
+      <button onclick="genCover()">Generate Cover Letter</button>
+      <button onclick="downloadCover()">Download as PDF</button>
+    </div>
+
     <div id="output"></div>
     <p class="footer">© 2026 CareerPilot AI</p>
   </div>
